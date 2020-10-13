@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html digunakan untuk mendefinisikan informasi tipe dokumen html -->
+<html lang="en" dir="ltr">
+  <head>
+  <!-- Tag <head> berfungsi untuk menyimpan informasi dari sebuah halaman -->
+    <meta charset="utf-8">
+    <!-- Tag <meta charset=”utf-8”> berarti halaman tersebut telah memberi informasi
+    terhadap browser dan search engine untuk melakukan pengkodean karakter sesuai
+    ketentuan UTF-8 -->
+    <title>PPBW2020-Pertemuan4-E</title>
+    <!-- Tag <title> berfungsi untuk membuat judul dari sebuah halaman -->
+  </head>
+  <body>
+  <!-- Tag <body> berfungsi untuk membuat tubuh / isi dari sebuah halaman -->
+    <table border="1" cellpadding="18">
+      <!-- Tag <table> digunakan untuk memulai tabel -->
+      <!-- Atribut border digunakan agar tabel memiliki garis. Nilai "1" pada
+      atribut border adalah ukuran garisnya -->
+      <!-- Atribut cellpadding digunakan untuk mengatur jarak teks dengan garis
+      di dalam sel. Nilai "18" pada atribut cellpadding adalah ukuran jarak antara
+      teks sel dengan garis -->
+    <caption><b>======== ASUS Official Store ========</b></caption>
+    <!-- Tag <caption> digunakan untuk membuat judul maupun memberikan keterangan
+    untuk sebuah tabel -->
+    <!-- Tag <b> berfungsi untuk membuat huruf bercetak tebal (bold) -->
+      <thead>
+      <!-- Tag <thead> digunakan untuk mengelompokkan isi atau konten yang berada
+      di bagian atas (kepala) pada sebuah tabel -->
+        <tr>
+          <!-- Tag <tr> (table row) digunakan untuk membuat garis -->
+          <th colspan="3" bgcolor="plum">Top Product</th>
+          <!-- Tag <th> (table head) digunakan untuk membuat judul pada header -->
+          <!-- Atribut colspan digunakan untuk menggabungkan kolom. Nilai "3" pada
+          atribut colspan adalah sebanyak 3 kolom yang digabungkan -->
+          <!-- Atribut bgcolor digunakan untuk menambahkan warna pada sel. Dan "plum"
+          adalah nama warna yang ingin digunakan -->
+        </tr>
+      </thead>
+      <tbody>
+      <!-- Tag <tbody> digunakan untuk mengelompokkan konten atau isi yang terletak
+      pada bagian tengah (tubuh) sebuah tabel -->
+        <tr>
+          <td bgcolor="lavender">Product Name</td>
+          <td>ASUS VivoBook S14 S430UN</td>
+          <!-- Tag <td> (table data) digunakan untuk membuat sel -->
+          <td rowspan="4">
+            <!-- Atribut rowspan digunakan untuk menggabungkan baris. Nilai "3" pada
+            atribut rowspan adalah sebanyak 3 baris yang digabungkan -->
+            <img src="image/product.jpg" height="250" width="280"</img>
+            <!-- Tag <img> berfungsi untuk menampilkan gambar, height dan width
+            berfungsi untuk mengatur tinggi dan lebar dari gambar -->
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="lavender">Price</td>
+          <td>Rp 15.099.000</td>
+        </tr>
+        <tr>
+          <td bgcolor="lavender">Specification</td>
+          <td>Intel® Core™ i7-8550U/8GB/1TB HDD + 256G SATA SSD/Windows 10 Home</td>
+        </tr>
+        <tr>
+          <td bgcolor="lavender">Color Variant</td>
+          <td>
+            <ul>
+              <li>Icicle Gold</li>
+              <li>Gun Metal</li>
+              <li>Silver Blue</li>
+              <li>Star Grey</li>
+              <li>Firmament Green</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
