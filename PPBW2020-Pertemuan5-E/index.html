@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPBW2020-Pertemuan5-E</title>
+    <style type="text/css">
+      .container{
+        width: 540px;
+        min-height: 460px;
+        margin: auto;
+        background-color: #D8BFD8;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 2px rgba(219, 112, 147, 0.5);
+      }
+      .main {
+        text-align: center;
+        font-family: Arial;
+        font-weight: bold;
+        padding-top:30px;
+      }
+      .table {
+        margin: auto;
+      }
+      .table td{
+        padding-top: 12px;
+      }
+      .input {
+        border-radius: 7px;
+      }
+      .submit {
+        padding: 5px 30px;
+        font-family: Arial;
+        font-weight: bold;
+        border-radius: 7px;
+      }
+      body {
+      background-position: center;
+      background-size: cover;
+      }
+
+    </style>
+
+  </head>
+  <body background="image/galaxy1.jpg">
+      <div class="container">
+          <h1 class="main">Form Registration</h1>
+          <hr>
+          <!-- Tag <hr> adalah singkatan dari Horizontal Rule, digunakan untuk membuat garis horizontal dan membagi atau memisahkan bagian dokumen -->
+        <form action="index.html" method="post">
+        <!-- tag <form> digunakan untuk menampung macam-macam element yang berkaitan dengan sebuah form
+        Tag ini memiliki beberapa atribut yang harus diberikan, seperti:
+        1. action untuk menentukan akasi yang akan dilakukan saat data dikirim;
+        2. method metode pengiriman data -->
+          <table class="table">
+          <!-- Tag <table> digunakan untuk memulai tabel -->
+            <tr>
+            <!-- Tag <tr> (tabel row) untuk membuat baris -->
+              <td><label for="name">Name</label></td>
+              <td><input type="text" class="input"></td>
+              <!-- Tag <td> (table data) untuk membuat sel -->
+              <!-- Tag <label> berfungsi sebagai pelengkap keterangan untuk beberapa objek form seperti radio atau checkbox.
+              Selain memberikan keterangan, tag label juga memudahkan penggunan dalam memasukkkan data (membuat form menjadi user friendly) -->
+              <!-- Tag <input> merupakan tag yang akan digunakan dalam form pengisian. Tag input ini memiliki banyak sekali bentuk yang bisa
+              digunakan misalkan isian teks, password, checkbox, radio, button, sampai dengan tombol submit berada dalam tag <input> -->
+            </tr>
+            <tr>
+              <td><label for="username">Username</label></td>
+              <td><input type="text" class="input"></td>
+              <!-- <input type="text"> textbox yang bisa menerima inputan text misalkan username atau berupa inputan text yang pendek -->
+            </tr>
+            <tr>
+              <td><label for="password">Password</label></td>
+              <td><input type="password" class="input"></td>
+              <!-- <input type="password"> textbox yang menerima inputan text, akan tetapi text diinput akan ditampilkan sebagai tanda bintang
+              atau titik, textbox ini biasanya digunakan untuk inputan password -->
+            </tr>
+            <tr>
+              <td><label for="gender">Gender</label></td>
+              <td>
+                <input type="radio" value="none" class="male" name="gender"/>
+                <label for="male" class="radio">Male</label>
+                <input type="radio" value="none" class="female" name="gender" />
+                <label for="female" class="radio">Female</label>
+                <!-- <input type="radio"> inputan yang berupa radio grup, dimana user dapat memilih salah satu dari pilihan yang disediakan.
+                Salah satu contoh penggunaan dari radio ini adalah gender (jenis kelamin) -->
+              </td>
+            </tr>
+            <tr>
+              <td><label for="hobby">Hobby</label></td>
+              <td>
+                <input type="checkbox">Coding
+                <input type="checkbox">Design
+                <input type="checkbox">Reading
+                <!-- <input type="checkbox"> inputan berupa checkbox yang dapat diceklis oleh user -->
+              </td>
+            </tr>
+            <tr>
+              <td><label for="nationality">Nationality</label></td>
+              <td>
+                <select name="nationality" id="nationality" class="input">
+                <!-- Tag <select> meupakan tag yang digunakan untuk user memilih data yang sudah disediakan -->
+                  <option value"">Indonesia</option>
+                  <option value"">Malaysia</option>
+                  <option value"">Singapura</option>
+                  <option value"">Thailand</option>
+                  <option value"">Korea</option>
+                  <!-- Tag <option> digunakan untuk mendefinisikan item – item yang ada pada sebuah menu seleksi -->
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="comment">Comment</label></td>
+              <td><textarea name="comment" class="input" cols="30" rows="12"></textarea></td>
+              <!-- Tag <textarea> merupakan tag yang sama fungsinya dengan inputan text, hanya saja pada textarea ini
+              dapat diisikan dengan lebih banyak teks didalamnya -->
+            </tr>
+            <tr>
+              <td><input type="submit" class="submit"></td>
+              <!-- <input type="submit"> inputan ini berupa tombol (button) untuk memproses data inputan dari form -->
+            </tr>
+          </table>
+        </form>
+      </div>
+  </body>
+</html>
