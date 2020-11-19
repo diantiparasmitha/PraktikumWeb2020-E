@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html digunakan untuk mendefinisikan informasi tipe dokumen html -->
+<html>
+  <head>
+  <!-- Tag <head> berfungsi untuk menyimpan informasi dari sebuah halaman -->
+    <meta charset="utf-8">
+    <!-- Tag <meta charset=”utf-8”> berarti halaman tersebut telah memberi informasi
+    terhadap browser dan search engine untuk melakukan pengkodean karakter sesuai
+    ketentuan UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <!-- Tag <title> berfungsi untuk membuat judul dari sebuah halaman -->
+    <script type="text/javascript" src="kalkulator.js"></script>
+     <!-- Untuk menghubungkan file HTML dengan JS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Untuk menghubungkan file HTML dengan CSS-->
+  </head>
+  <body>
+  <!-- Tag <body> berfungsi untuk membuat tubuh / isi dari sebuah halaman -->
+	   <div class="main">
+       <h2>Kalkulator</h2>
+       <!-- Tag <h2> digunakan untuk membuat judul -->
+       <div class="submain">
+		     <form name="form">
+           <input class="tampilan" name="tampilan" value="">
+            </form>
+		         <center>
+             <!-- Tag <center> digunakan agar posisi dari tabel berada ditengah -->
+               <table>
+               <!-- Tag <table> digunakan untuk memulai tabel -->
+                 <tr>
+                 <!-- Tag <tr> (table row) digunakan untuk membuat garis -->
+                   <!-- Tag <td> (table data) digunakan untuk membuat sel -->
+                   <!-- Tag <input> merupakan tag yang akan digunakan dalam form pengisian -->
+                   <!-- <input type="button"> dan <input type="submit" yaitu inputan berupa tombol (button)
+                   untuk memproses data inputan dari form -->
+                   <td><input class="tombol" type="button" value="%" onclick="masukan('%')"></td>
+                   <!-- Untuk membuat tombol dengan nilai "%" atau modulo yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                   <td><input class="tombol" type="button" value="C" onclick="reset()"></td>
+                   <!-- Untuk membuat tombol dengan nilai "C" yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi reset() dalam file javascript "kalkulator.js" yaitu untuk mereset ulang atau
+                   menghapus seluruh input sementara -->
+                   <td><input class="tombol" type="button" value="<" onclick="hapus()"></td>
+                   <!-- Untuk membuat tombol dengan nilai "<" yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi hapus() dalam file javascript "kalkulator.js" yaitu untuk hanya akan menghapus
+                   1 karakter dari input sementara -->
+                   <td><input class="submit" type="submit" value="/" onclick="masukan('/')"></td>
+                   <!-- Untuk membuat tombol dengan nilai "/" atau bagi yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+			           </tr>
+                 <tr>
+                   <td><input class="tombol" type="button" value="7" onclick="masukan(7)"></td>
+                   <!-- Untuk membuat tombol dengan nilai "7" yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                   <td><input class="tombol" type="button" value="8" onclick="masukan(8)"></td>
+                   <!-- Untuk membuat tombol dengan nilai "8" yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                   <td><input class="tombol" type="button" value="9" onclick="masukan(9)"></td>
+                   <!-- Untuk membuat tombol dengan nilai "9" yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                   <td><input class="submit" type="submit" value="x" onclick="masukan('*')"></td>
+                   <!-- Untuk membuat tombol dengan nilai "x" atau kali yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+			           </tr>
+                 <tr>
+                   <td><input class="tombol" type="button" value="4" onclick="masukan(4)"></td>
+                   <!-- Untuk membuat tombol dengan nilai "4" yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                   <td><input class="tombol" type="button" value="5" onclick="masukan(5)"></td>
+                   <!-- Untuk membuat tombol dengan nilai "5" yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                   <td><input class="tombol" type="button" value="6" onclick="masukan(6)"></td>
+                   <!-- Untuk membuat tombol dengan nilai "6" yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                   <td><input class="submit" type="submit" value="-" onclick="masukan('-')"></td>
+                   <!-- Untuk membuat tombol dengan nilai "-" atau kurang yang dimana jika tombol ini diklik nilainya
+                   akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+			          </tr>
+                <tr>
+                  <td><input class="tombol" type="button" value="1" onclick="masukan(1)"></td>
+                  <!-- Untuk membuat tombol dengan nilai "1" yang dimana jika tombol ini diklik nilainya
+                  akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                  <td><input class="tombol" type="button" value="2" onclick="masukan(2)"></td>
+                  <!-- Untuk membuat tombol dengan nilai "2" yang dimana jika tombol ini diklik nilainya
+                  akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                  <td><input class="tombol" type="button" value="3" onclick="masukan(3)"></td>
+                  <!-- Untuk membuat tombol dengan nilai "3" yang dimana jika tombol ini diklik nilainya
+                  akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                  <td><input class="submit" type="submit" value="+" onclick="masukan('+')"></td>
+                  <!-- Untuk membuat tombol dengan nilai "+" atau tambah yang dimana jika tombol ini diklik nilainya
+                  akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+			          </tr>
+                <tr>
+                  <td><input class="tombol" type="button" value="x&sup2" onclick="masukan('pangkat')"></td>
+                  <!-- Untuk membuat tombol dengan nilai "^2" atau pangkat 2 yang dimana jika tombol ini diklik nilainya
+                  akan dibawa ke fungsi masukan(num) jika num=='pangkat' dalam file javascript "kalkulator.js" -->
+                  <td><input class="tombol" type="button" value="0" onclick="masukan(0)"></td>
+                  <!-- Untuk membuat tombol dengan nilai "0" yang dimana jika tombol ini diklik nilainya
+                  akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                  <td><input class="tombol" type="button" value="." onclick="masukan('.')"></td>
+                  <!-- Untuk membuat tombol dengan nilai "." atau koma yang dimana jika tombol ini diklik nilainya
+                  akan dibawa ke fungsi masukan(num) dalam file javascript "kalkulator.js" -->
+                  <td><input class="submit" type="submit" value="=" onclick="hasil()"></td>
+                  <!-- Untuk membuat tombol dengan nilai "=" atau sama dengan yang dimana jika tombol ini diklik nilainya
+                  akan dibawa ke fungsi hasil() dalam file javascript "kalkulator.js" -->
+			          </tr>
+		          </table>
+            </center>
+        </div>
+	   </div>
+  </body>
+</html>
