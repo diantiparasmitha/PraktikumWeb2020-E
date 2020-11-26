@@ -87,7 +87,7 @@ else if ($nilai_akhir<60) {
             </tr>
             <tr>
               <td><label for="$nilai_akhir">Nilai Akhir</label></td>
-              <td><input type="text" name="uas" class="input" value="<?php echo $nilai_akhir ?>" readonly></td>
+              <td><input type="text" name="nilai_akhir" class="input" value="<?php echo $nilai_akhir ?>" readonly></td>
             </tr>
             <tr>
               <td><label for="$nilai_predikat">Predikat</label></td>
