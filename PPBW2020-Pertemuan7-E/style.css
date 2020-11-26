@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FFF0F5;
+}
+.container {
+  border: 1px solid #6495ED;
+  width: 300px;
+  height: 350px;
+  position: fixed;
+  left: 38%;
+  top: 10%;
+  background: #E6E6FA;
+  border-radius: 5px;
+}
+
+.main {
+  margin: 40px 7%;
+}
+input[type="submit"]:hover{
+  background: #A9A9A9;
+  cursor: pointer;
+}
+
+h1 {
+  position: fixed;
+  top: 13%;
+  left: 41%;
+  color: black;
+  font-weight: bold;
+  text-transform:uppercase;
+  font-family: inter,sans-serif;
+  font-size: 18px;
+}
+
+.input {
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.container-hasil {
+  border: 1px solid #6495ED;
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  left: 38%;
+  top: 10%;
+  background: #E6E6FA;
+  border-radius: 5px;
+}
+
+.main-hasil {
+  margin: 40px 7%;
+}
